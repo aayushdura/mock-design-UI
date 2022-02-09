@@ -2,6 +2,7 @@ $leftMargin: 50px;
 $leftMarginNavTitle: 30px;
 $paraGraphTexts: 15px;
 $primaryAqua: rgb(80, 218, 206);
+$primaryWhite: rgb(236, 236, 236);
 
 @mixin structure($direction) {
   display: flex;
@@ -14,7 +15,7 @@ $primaryAqua: rgb(80, 218, 206);
   @include structure($direction);
   justify-content: center;
   background: $bgColor;
-  color: aliceblue;
+  color: $primaryWhite;
   padding: 50px;
   width: 25.8%;
   height: 250px;

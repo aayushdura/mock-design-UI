@@ -1,3 +1,17 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Fjalla One", sans-serif;
+  width: 100%;
+}
+
 .container-1 {
   background-image: url(../images/bg1.jpg);
   background-repeat: no-repeat;
@@ -15,6 +29,9 @@
       -ms-flex-direction: row;
           flex-direction: row;
   font-family: "Fjalla One", sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -53,7 +70,7 @@
   background-color: black;
   border: none;
   border-radius: 25px;
-  color: white;
+  color: #ececec;
 }
 
 .information-container {
@@ -86,7 +103,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   background: black;
-  color: aliceblue;
+  color: #ececec;
   padding: 50px;
   width: 25.8%;
   height: 250px;
@@ -109,7 +126,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   background: #50dace;
-  color: aliceblue;
+  color: #ececec;
   padding: 50px;
   width: 25.8%;
   height: 250px;
@@ -132,7 +149,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   background: #136b5c;
-  color: aliceblue;
+  color: #ececec;
   padding: 50px;
   width: 25.8%;
   height: 250px;
@@ -183,12 +200,13 @@
   width: 100%;
   margin-top: 80px;
   background: #50dace;
-  color: white;
+  color: #ececec;
 }
 
 .container-4 .cont-4-description-text {
   padding: 70px;
   text-align: left;
+  font-size: 15px;
   background: #50dace;
   width: 35%;
 }
@@ -196,7 +214,7 @@
 .container-4 .learn-more-btn-2 {
   height: 40px;
   width: 150px;
-  background-color: white;
+  background-color: #ececec;
   border: none;
   border-radius: 25px;
   color: #50dace;
@@ -220,6 +238,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 15px;
 }
 
 .services-container-5 .service-tiles {
@@ -236,8 +255,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: white;
-  color: aliceblue;
+  background: #ececec;
+  color: #ececec;
   padding: 50px;
   width: 25.8%;
   height: 250px;
@@ -270,7 +289,7 @@
   font-family: "Fjalla One", sans-serif;
   width: 100%;
   margin-top: 80px;
-  background: #e4dddd;
+  background: #ececec;
 }
 
 .container-6 img {
@@ -291,7 +310,7 @@
   background-color: #50dace;
   border: none;
   border-radius: 25px;
-  color: white;
+  color: #ececec;
   margin-top: 50px;
 }
 
@@ -310,7 +329,7 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #50dace;
-  color: white;
+  color: #ececec;
   height: 200px;
 }
 
@@ -322,7 +341,7 @@
 .know-us-more .learn-more-btn-4 {
   height: 40px;
   width: 150px;
-  background-color: white;
+  background-color: #ececec;
   border: none;
   border-radius: 25px;
   color: #50dace;
@@ -352,7 +371,7 @@
   width: 150px;
   margin-top: 250px;
   background-color: black;
-  color: aliceblue;
+  color: #ececec;
 }
 
 .footer {
@@ -374,20 +393,6 @@
           align-items: center;
   height: 100px;
   background-color: black;
-  color: white;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: "Fjalla One", sans-serif;
-  width: 100%;
+  color: #ececec;
 }
 /*# sourceMappingURL=index.css.map */

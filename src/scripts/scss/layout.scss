@@ -1,12 +1,16 @@
 @import "./base";
 
+.container {
+  @include structure($direction: column);
+  width: 100%;
+}
 .container-1 {
   background-image: url(../images/bg1.jpg);
   background-repeat: no-repeat;
   background-position: 600px 50px;
-
   nav {
     @include structure($direction: row);
+    justify-content: center;
     align-items: center;
     gap: 1100px;
     h2 {
@@ -34,7 +38,7 @@
   }
 
   .learn-more-btn {
-    @include primaryButton($buttonBgColor: black, $btnColor: white);
+    @include primaryButton($buttonBgColor: black, $btnColor: $primaryWhite);
   }
 }
 
@@ -60,7 +64,6 @@
   align-items: center;
   text-align: center;
   font-size: $paraGraphTexts;
-
   button {
     border: thin solid rgb(168, 163, 163);
     height: 30px;
@@ -74,15 +77,20 @@
   width: 100%;
   margin-top: 80px;
   background: $primaryAqua;
-  color: white;
+  color: $primaryWhite;
+
   .cont-4-description-text {
     padding: 70px;
     text-align: left;
+    font-size: $paraGraphTexts;
     background: $primaryAqua;
     width: 35%;
   }
   .learn-more-btn-2 {
-    @include primaryButton($buttonBgColor: white, $btnColor: $primaryAqua);
+    @include primaryButton(
+      $buttonBgColor: $primaryWhite,
+      $btnColor: $primaryAqua
+    );
     margin-top: 40px;
   }
 }
@@ -91,8 +99,9 @@
   @include structure($direction: column);
   justify-content: center;
   align-items: center;
+  font-size: $paraGraphTexts;
   .service-tiles {
-    @include goalDiv-3($bgColor: white, $direction: column);
+    @include goalDiv-3($bgColor: $primaryWhite, $direction: column);
     margin-right: 650px;
     row-gap: 65px;
     column-gap: 100px;
@@ -110,7 +119,7 @@
   @include structure($direction: row);
   width: 100%;
   margin-top: 80px;
-  background: rgb(228, 221, 221);
+  background: $primaryWhite;
   img {
     width: 641px;
     height: 450px;
@@ -122,7 +131,10 @@
     margin-left: $leftMargin;
   }
   .learn-more-btn-3 {
-    @include primaryButton($buttonBgColor: $primaryAqua, $btnColor: white);
+    @include primaryButton(
+      $buttonBgColor: $primaryAqua,
+      $btnColor: $primaryWhite
+    );
     margin-top: 50px;
   }
 }
@@ -131,14 +143,17 @@
   @include structure($direction: row);
   align-items: center;
   background-color: $primaryAqua;
-  color: white;
+  color: $primaryWhite;
   height: 200px;
   .description-text {
     margin-left: $leftMargin;
     padding-left: 80px;
   }
   .learn-more-btn-4 {
-    @include primaryButton($buttonBgColor: white, $btnColor: $primaryAqua);
+    @include primaryButton(
+      $buttonBgColor: $primaryWhite,
+      $btnColor: $primaryAqua
+    );
     margin: auto;
   }
 }
@@ -153,7 +168,7 @@
     width: 150px;
     margin-top: 250px;
     background-color: black;
-    color: aliceblue;
+    color: $primaryWhite;
   }
 }
 
@@ -163,5 +178,5 @@
   align-items: center;
   height: 100px;
   background-color: black;
-  color: white;
+  color: $primaryWhite;
 }

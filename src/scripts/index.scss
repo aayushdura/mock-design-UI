@@ -1,6 +1,0 @@
-@import "./base", "./layout.scss";
-
-.container {
-  @include structure($direction: column);
-  width: 100%;
-}
