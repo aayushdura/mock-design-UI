@@ -1,0 +1,32 @@
+$leftMargin: 50px;
+$leftMarginNavTitle: 30px;
+$paraGraphTexts: 15px;
+$primaryAqua: rgb(80, 218, 206);
+
+@mixin structure($direction) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $direction;
+  font-family: "Fjalla One", sans-serif;
+}
+
+@mixin goalDiv-3($bgColor, $direction) {
+  @include structure($direction);
+  justify-content: center;
+  background: $bgColor;
+  color: aliceblue;
+  padding: 50px;
+  width: 25.8%;
+  height: 250px;
+  text-align: center;
+  font-size: $paraGraphTexts;
+}
+
+@mixin primaryButton($buttonBgColor, $btnColor) {
+  height: 40px;
+  width: 150px;
+  background-color: $buttonBgColor;
+  border: none;
+  border-radius: 25px;
+  color: $btnColor;
+}

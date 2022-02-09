@@ -1,0 +1,167 @@
+@import "./base";
+
+.container-1 {
+  background-image: url(../images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: 600px 50px;
+
+  nav {
+    @include structure($direction: row);
+    align-items: center;
+    gap: 1100px;
+    h2 {
+      margin-left: $leftMarginNavTitle;
+      font-weight: 800;
+    }
+  }
+
+  .body-text {
+    margin-left: $leftMargin;
+    height: 450px;
+    .p1-big {
+      top: 10px;
+      font-weight: 900;
+      font-size: 40px;
+    }
+    .p2-small {
+      font-style: italic;
+      font-size: 15px;
+    }
+    a {
+      color: $primaryAqua;
+      text-decoration: none;
+    }
+  }
+
+  .learn-more-btn {
+    @include primaryButton($buttonBgColor: black, $btnColor: white);
+  }
+}
+
+.information-container {
+  @include structure($direction: row);
+  width: 100%;
+  flex-wrap: wrap;
+  .div-1 {
+    @include goalDiv-3($bgColor: black, $direction: column);
+  }
+  .div-2 {
+    @include goalDiv-3($bgColor: $primaryAqua, $direction: column);
+  }
+  .div-3 {
+    @include goalDiv-3($bgColor: rgb(19, 107, 92), $direction: column);
+  }
+}
+
+.about-container {
+  @include structure($direction: column);
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: $paraGraphTexts;
+
+  button {
+    border: thin solid rgb(168, 163, 163);
+    height: 30px;
+    width: 150px;
+    margin-top: 80px;
+  }
+}
+
+.container-4 {
+  @include structure($direction: row);
+  width: 100%;
+  margin-top: 80px;
+  background: $primaryAqua;
+  color: white;
+  .cont-4-description-text {
+    padding: 70px;
+    text-align: left;
+    background: $primaryAqua;
+    width: 35%;
+  }
+  .learn-more-btn-2 {
+    @include primaryButton($buttonBgColor: white, $btnColor: $primaryAqua);
+    margin-top: 40px;
+  }
+}
+
+.services-container-5 {
+  @include structure($direction: column);
+  justify-content: center;
+  align-items: center;
+  .service-tiles {
+    @include goalDiv-3($bgColor: white, $direction: column);
+    margin-right: 650px;
+    row-gap: 65px;
+    column-gap: 100px;
+    color: black;
+  }
+  button {
+    border: thin solid rgb(168, 163, 163);
+    height: 30px;
+    width: 150px;
+    margin-top: 80px;
+  }
+}
+
+.container-6 {
+  @include structure($direction: row);
+  width: 100%;
+  margin-top: 80px;
+  background: rgb(228, 221, 221);
+  img {
+    width: 641px;
+    height: 450px;
+  }
+  .cont-6-description-text {
+    padding-top: 80px;
+    padding-left: 80px;
+    width: 42%;
+    margin-left: $leftMargin;
+  }
+  .learn-more-btn-3 {
+    @include primaryButton($buttonBgColor: $primaryAqua, $btnColor: white);
+    margin-top: 50px;
+  }
+}
+
+.know-us-more {
+  @include structure($direction: row);
+  align-items: center;
+  background-color: $primaryAqua;
+  color: white;
+  height: 200px;
+  .description-text {
+    margin-left: $leftMargin;
+    padding-left: 80px;
+  }
+  .learn-more-btn-4 {
+    @include primaryButton($buttonBgColor: white, $btnColor: $primaryAqua);
+    margin: auto;
+  }
+}
+
+.container-8 {
+  @include structure($direction: column);
+  align-items: center;
+  height: 400px;
+  .view-more-btn {
+    border: thin solid rgb(0, 0, 0);
+    height: 30px;
+    width: 150px;
+    margin-top: 250px;
+    background-color: black;
+    color: aliceblue;
+  }
+}
+
+.footer {
+  @include structure($direction: column);
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: black;
+  color: white;
+}
